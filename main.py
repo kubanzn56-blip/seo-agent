@@ -12,7 +12,7 @@ ostatni_pdf = None
 
 @app.on_event("startup")
 def start():
-    scheduler.add_job(run_and_save, "cron", day_of_week="wed", hour=16, minute=17)
+    scheduler.add_job(run_and_save, "cron", day_of_week="wed", hour=16, minute=39)
     scheduler.start()
     print("SEO Agent uruchomiony — raport co poniedzialek o 8:00.")
 
